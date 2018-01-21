@@ -10,6 +10,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack template generator',
+      minify: {
+        collapseWhitespace: true
+      },
+      hash: true,
       template: './src/index.ejs'
     })
   ]
