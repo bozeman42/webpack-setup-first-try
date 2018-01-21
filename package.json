@@ -9,7 +9,11 @@
     "webpack": "2.6.1"
   },
   "scripts": {
-    "dev": "webpack -d --watch",
+    "dev": "webpack-dev-server",
+    "dev-build": "webpack -d -watch",
     "prod": "webpack -p"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.11.1"
   }
 }
