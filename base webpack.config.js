@@ -11,22 +11,8 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'dist'),
     compress: true,
     port: 3000,
-    // stats: 'errors-only',
+    stats: 'errors-only',
     open: true
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: 'babel-loader'
-      },
-      {
-        test: /\.jsx$/,
-        exclude: /node_modules/,
-        use: 'babel-loader'
-      }
-    ]
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -1,3 +1,3 @@
-export default () => {
-  console.log('Cool beans');
+module.exports =  function() {
+  console.log('Cool beans!');
 }

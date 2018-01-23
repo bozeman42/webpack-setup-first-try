@@ -1,4 +1,8 @@
-import coolBeans from './modules/module';
+import React from 'react';
+import ReactDom from 'react-dom';
+import App from './components/app';
 
-console.log('Hello, World!...');
-coolBeans(); coolBeans();
+ReactDom.render(<App />, document.getElementById('root'));
+const root = document.getElementById('root');
+
+// root.innerHTML = 'Hello, World!';
